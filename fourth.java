@@ -24,7 +24,7 @@ class fourth
 					h = in.nextDouble();
 					System.out.print("Enter radius of the cylinder : ");
 					r = in.nextDouble();
-					area = 2*3.14*r*h+3.15*2*r*r;
+					area = 2*3.14*r*h+3.14*2*r*r;
 					volume = 3.14*r*r*h;
 					System.out.println("Surface Area = "+area);
 					System.out.println("Voulume = "+volume+"\n\n");
