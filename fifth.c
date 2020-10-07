@@ -69,7 +69,7 @@ int main()
 
 
 
-        printf("The following students have to change their course selection ;\n\n");
+        printf("Students enrolled in courses;\n\n");
         if(f1){
         printf("From IOT;\n\n");
         for(i=0;i<c1;i++)
