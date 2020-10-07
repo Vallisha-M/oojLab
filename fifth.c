@@ -3,7 +3,7 @@
 int main()
 {
     int n=0, i=0, c=0, c1=0, c2=0, c3=0;
-    int f1=1,f2=1,f3=1, ff=n;
+    int f1=1,f2=1,f3=1;
     char iot[MAX][20], j2ee[MAX][20], aj[MAX][20];
     printf("Enter number of students (Less than 101) : ");
     scanf("%d", &n);
@@ -38,7 +38,7 @@ int main()
                 printf("\n\nInvalid input\n\n");
                 break;
         }
-        if(i==n-1)
+        if(i==n)
         {
             i=-1;
             if(c1<30)
