@@ -103,7 +103,7 @@ public class Student
     }
     
      void display()
-    {
+     {
 	System.out.println();
         System.out.println("USN : "+usn);
         System.out.println("Name : "+name);
