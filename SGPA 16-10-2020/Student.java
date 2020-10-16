@@ -41,7 +41,7 @@ public class Student
         name = in.nextLine();
         System.out.print("Enter your USN : ");
         usn = in.next();
-        System.out.print("Enter number of courses taken(MAX 10) : ");
+        System.out.print("Enter number of courses taken : ");
         numberOfCourses = in.nextInt();
         marksArray = new int[numberOfCourses];
         creditsArray = new int[numberOfCourses];
