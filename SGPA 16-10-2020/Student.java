@@ -37,7 +37,7 @@ public class Student
      void input()
     {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter your name : ");
+        System.out.print("Enter your Name : ");
         name = in.nextLine();
         System.out.print("Enter your USN : ");
         usn = in.next();
