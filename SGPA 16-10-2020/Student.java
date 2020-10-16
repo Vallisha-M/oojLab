@@ -6,7 +6,7 @@ Vallisha M
 /*
 marksArray stores the marks obtained by the student in courses
 creditsArray stores credits associated with each course
-gradeArray stores the grade(0,4-10) according to markrs obtained
+gradesArray stores the grade(0,4-10) according to markrs obtained
 
 corresponding elements of theses three arrays are related to each other
 
@@ -17,9 +17,9 @@ marksArray[i] = 55;
 creditsArray[i] = 3;
 
 then,
-gradeArray[i] = 6;
+gradesArray[i] = 6;
 
-gradeArray[i] is computed using marksArray[i]
+gradesArray[i] is computed using marksArray[i]
 creditsArray[i] is credits for the course in the marks obtained is marksArray[i]
 
 */
@@ -31,7 +31,7 @@ public class Student
      String usn, name;
      int creditsArray[];
      int marksArray[];
-     int gradeArray[];
+     int gradesArray[];
      double SGPA;
     
      void input()
@@ -45,7 +45,7 @@ public class Student
         numberOfCourses = in.nextInt();
         marksArray = new int[numberOfCourses];
         creditsArray = new int[numberOfCourses];
-        gradeArray = new int[numberOfCourses];
+        gradesArray = new int[numberOfCourses];
         
         int i = 0;
         
@@ -61,27 +61,27 @@ public class Student
         in.close();
     }
     
-    void computeGradeArray()
+    void computeGradesArray()
     {
         int i = 0;
         for(i=0;i<numberOfCourses;i++)
         {
             if(marksArray[i]==100)
             {
-                gradeArray[i] = 10;
+                gradesArray[i] = 10;
                 continue;
             }
             if(marksArray[i]>=50)
             {
-                gradeArray[i] = (marksArray[i]/10)+1;
+                gradesArray[i] = (marksArray[i]/10)+1;
                 continue;
             }
             if(marksArray[i]>=35)
             {
-                gradeArray[i] = 4;
+                gradesArray[i] = 4;
                 continue;
             }
-            gradeArray[i]=0;
+            gradesArray[i]=0;
         }
     }
     
@@ -92,7 +92,7 @@ public class Student
         int netCredits = 0;
         for(i = 0 ; i < numberOfCourses ; i++)
         {
-            SGPA = SGPA + creditsArray[i]*gradeArray[i];
+            SGPA = SGPA + creditsArray[i]*gradesArray[i];
             netCredits = netCredits+creditsArray[i];
         }
         SGPA = SGPA/netCredits;
@@ -114,7 +114,7 @@ public class Student
     {
         Student object = new Student();
         object.input();
-        object.computeGradeArray();
+        object.computeGradesArray();
         object.computeSGPA();
         object.display();
     }
