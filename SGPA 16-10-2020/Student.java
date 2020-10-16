@@ -34,6 +34,11 @@ public class Student
      int gradesArray[];
      double SGPA;
     
+     Student()
+     {
+	 SGPA = 0.0D;
+     }
+	
      void input()
      {
         Scanner in = new Scanner(System.in);
@@ -88,7 +93,6 @@ public class Student
      void computeSGPA()
      {
         int i = 0;
-        SGPA = 0.0D;
         int netCredits = 0;
         for(i = 0 ; i < numberOfCourses ; i++)
         {
