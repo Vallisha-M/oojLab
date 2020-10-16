@@ -35,7 +35,7 @@ public class Student
      double SGPA;
     
      void input()
-    {
+     {
         Scanner in = new Scanner(System.in);
         System.out.print("\nEnter your Name : ");
         name = in.nextLine();
@@ -86,7 +86,7 @@ public class Student
     }
     
      void computeSGPA()
-    {
+     {
         int i = 0;
         SGPA = 0.0D;
         int netCredits = 0;
